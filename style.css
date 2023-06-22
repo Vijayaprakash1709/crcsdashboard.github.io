@@ -1,0 +1,834 @@
+@font-face {
+    font-family: Droid Sans;
+    src: url('../fonts/DroidSans-webfont.eot');
+    src: local("Droid Sans"), url('../fonts/DroidSans-webfont.woff');
+}
+
+@font-face {
+    font-family: News Cycle;
+    src: url('../fonts/NewsCycle-Regular.eot');
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf');
+}
+
+
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+body {
+    font-family:'Droid Sans', arial, sans-serif;
+    font-size:12px;
+
+   /*font: normal .80em */
+    background: #ffffff;
+    color: #444;
+    margin:0;
+}
+
+p {
+    padding: 0 0 16px 0;
+    line-height: 1.5em;
+}
+
+
+#main, #container, #logo, #site_content, footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    background: #EEEEEE url(../images/light.png);
+}
+
+
+#header {
+    background: #0a023d;
+    height: 130px;
+    /*increase width*/
+
+    width: 1470px;
+
+    padding: 40px 0 0 0;
+    border-bottom: 2px solid #040c33;
+    position: relative;
+    z-index: 10;
+
+}
+    /*increase breadth of header*/
+    
+
+#logo {
+    
+    background: transparent;
+    color: #da0d0d;
+    padding: 5px 0 10px 0;
+}
+
+    #logo #logo_text {
+        width: 970px;
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border: 7px;
+        /*background-color: none;*/
+        left: 0;
+        padding: 10px 0 10px 20px;
+    }
+
+.ImgLogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+
+#logo h1, #logo h2 {
+    font: normal 250% 'News Cycle', arial, sans-serif;
+    border-bottom: 0;
+    text-transform: none;
+    margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+    padding: 0;
+    color: #FFF;
+    text-decoration: none;
+}
+
+    #logo_text h1 a .logo_colour {
+        color: #CEC240;
+    }
+
+#logo_text a:hover .logo_colour {
+    color: #FFF;
+}
+
+#logo_text h2 {
+    font-size: 140%;
+    padding: 2px 0 2px 0;
+    color: 	#ccffcc;
+   
+    letter-spacing: 1px;
+}
+
+#HeaderImg {
+    padding-right: 30px;
+    float: right;
+    height: 50px;
+    padding-top: 2px;
+}
+
+.nav {
+    height: 66px;
+    margin: -44px auto 0 auto;
+    color: #fef7f0;
+    background: transparent url(../images/menubar.png);
+    border-bottom: 5px solid #73b109;
+}
+
+#menu_container {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    border-radius: 18px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    text-align: center;
+}
+
+#site_content {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0px auto 0 auto;
+    padding: 10px 0 20px 0;
+    text-shadow: 0 1px #f5eaea;
+}
+
+#sidebar_container {
+    float: right;
+    width: 254px;
+    padding-right: 40px;
+    margin-top: 0px;
+}
+
+.sidebar {
+    width: 254px;
+    margin: 8px 0 0px 0;
+    background: #ddd; /* Show a solid color for older browsers */
+    background: -moz-linear-gradient(#fff, #E6E4D4);
+    background: -o-linear-gradient(#fff, #E6E4D4);
+    background: -webkit-linear-gradient(#fff, #E6E4D4);
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border: 7px 7px 7px 7px;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    padding: 0 15px 5px 13px;
+}
+
+.content h1, .content h2 {
+    padding: 2px 15px 2px 20px;
+    font: 200% 'News Cycle', arial, sans-serif;
+    text-shadow: #FFF 0 1px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border: 7px 7px 7px 7px;
+    border: 2px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    margin:8px;
+}
+
+.sidebar h3 {
+    padding: 0 15px 0 0;
+    font: 200% 'News Cycle', arial, sans-serif;
+    text-shadow: #FFF 0 1px;
+    margin : 6px 0 6px 0;
+}
+
+
+
+.sidebar ul {
+    margin: 0 0 0 0;
+}
+
+.sidebar li a, .sidebar li a:hover {
+    color: #000804;
+    text-decoration: none;
+}
+
+    .sidebar li a:hover {
+        color: #ff0000;
+        text-decoration: underline;
+    }
+
+.sidebar_item, .content_item {
+    padding: 15px 0;
+}
+
+.content {
+    color: #000000;
+    text-align: left;
+    width: 700px;
+    margin: 0 0 5px 0;
+    float: left;
+    font-size: 120%;
+    padding: 0 5px 0 0;
+    text-align: justify;
+}
+
+.content p{
+    padding :0 15px 0 15px;
+   
+}
+
+    .content ul {
+        margin: 2px 0 22px 0px;
+    }
+
+        .content ul li, .sidebar ul li {
+            list-style-type: none;
+            background: url(../images/bullet.png) no-repeat;
+            margin: 0 0 0 0;
+            padding: 0 0 2px 28px;
+            line-height: 1.5em;
+        }
+
+
+#footer {
+    font: 100% 'Droid Sans', arial, sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 1470px;
+    /*increase height above*/
+    height: 110px;
+
+    text-align: center;
+    background: #14014c;
+    color: #FFF;       
+    border-top: 6px solid #3d9900;
+   
+}
+
+    #footer p {
+        line-height: 1.7em;
+        padding: 0 0 0 0;
+      
+    }
+
+    #footer a {
+        color: #FFF;
+        
+        text-decoration: none;
+        font-size: 13px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+        #footer a:hover {
+            color: #ffe103;
+            text-decoration: none;
+        }
+
+        
+ #CurrentNews Li a {
+            color:Black;
+            font-size:12px;
+             font-weight:bold;
+            text-decoration:none;
+        }
+        #CurrentNews Li a:hover{
+          
+           color:maroon;
+        }
+        #HIT{ 
+    
+    width: 150px;
+    height: 35px;   
+}
+
+
+
+
+/* scroll to top */
+#scroll {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    bottom: 15px;
+    right: 0;
+    background: red;
+    padding: 0;
+}
+
+    #scroll a {
+        float: right;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+        #scroll a img {
+            float: right;
+            padding: 0 0 0 0;
+            margin: 0;
+            border: 0;
+        }
+
+#scrollBot {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    bottom: 15px;
+    right: 0;
+    background: red;
+    padding: 0;
+}
+
+
+
+
+
+/**
+
+**/
+
+/* Configuration of menu width */
+html body ul.sf-menu ul, html body ul.sf-menu ul li {
+    width: 220px;
+}
+
+    html body ul.sf-menu ul ul {
+        margin: 0 0 0 220px;
+    }
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu, ul.sf-menu * {
+    margin: 0;
+    padding: 0;
+}
+
+ul.sf-menu {
+    display: block;
+    position: relative;
+}
+
+    ul.sf-menu li {
+        display: block;
+        list-style: none;
+        float: left;
+        position: relative;
+        
+    }
+
+        ul.sf-menu li:hover {
+            visibility: inherit; /* fixes IE7 'sticky bug' */
+        }
+
+    ul.sf-menu a {
+        display: block;
+        position: relative;
+    }
+
+    ul.sf-menu ul {
+        position: absolute;
+        left: 0;
+        width: 150px;
+        font-size: 13px;
+        top: auto;
+        left: -999999px;
+    }
+   
+    
+     /* IE6/7 fix */
+        /*ul.sf-menu ul a {
+            zoom: 1; 
+        }*/
+
+        ul.sf-menu ul li {
+            float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+            width: 150px;
+        }
+
+        ul.sf-menu ul ul {
+            top: 0;
+            margin: 0 0 0 10px;
+        }
+
+            ul.sf-menu li:hover ul, ul.sf-menu li:focus ul, ul.sf-menu li.sf-hover ul,
+            ul.sf-menu ul li:hover ul, ul.sf-menu ul li:focus ul, ul.sf-menu ul li.sf-hover ul,
+            ul.sf-menu ul ul li:hover ul, ul.sf-menu ul ul li:focus ul, ul.sf-menu ul ul li.sf-hover ul,
+            ul.sf-menu ul ul ul li:hover ul, ul.sf-menu ul ul ul li:focus ul, ul.sf-menu ul ul ul li.sf-hover ul {
+                left: auto;
+            }
+
+                ul.sf-menu li:hover ul ul, ul.sf-menu li:focus ul ul, ul.sf-menu li.sf-hover ul ul,
+                ul.sf-menu ul li:hover ul ul, ul.sf-menu ul li:focus ul ul, ul.sf-menu ul li.sf-hover ul ul,
+                ul.sf-menu ul ul li:hover ul ul, ul.sf-menu ul ul li:focus ul ul, ul.sf-menu ul ul li.sf-hover ul ul,
+                ul.sf-menu ul ul ul li:hover ul ul, ul.sf-menu ul ul ul li:focus ul ul, ul.sf-menu ul ul ul li.sf-hover ul ul {
+                    left: -999999px;
+                }
+
+/* autoArrows CSS */
+
+
+/* autoArrows CSS */
+span.sf-arrow {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    display: block;
+    background: url(../images/arrows-white.png) no-repeat 0 0;
+    overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+    font-size: 1px;
+}
+
+ul ul span.sf-arrow {
+    right: 10px;
+    top: 10px;
+    padding-left: 10px;
+    background-position: 0 100%;
+}
+
+/* Theming the menu */
+ul#nav {
+    float: right;
+}
+
+    ul#nav ul {
+        background: #000000;
+        margin-top: 0px;
+        text-align: left;
+        font-family: Tahoma;
+    }
+
+        ul#nav ul li a {
+            background: #000000;
+            font-size: 13px;
+            text-align: left;
+            font-family: Tahoma;
+            padding-top: 2px;
+            padding-bottom: 8px;
+        }
+
+    ul#nav li a {
+        padding: 13px 17px 5px 17px;
+        font: normal 1.30em 'Droid Sans', arial, sans-serif;
+        text-decoration: none;
+        color: #FFF;
+        margin-right: 2px;
+    }
+
+        ul#nav li a:hover, ul#nav li a:focus {
+            color: #7bc1f7;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+.PageHead h1 {
+    padding: 0 15px 2px 20px;
+    font: 200% 'News Cycle', arial, sans-serif;
+    text-shadow: #FFF 0 1px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border: 7px 7px 7px 7px;
+    border: 2px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    text-align: center;
+}
+
+.PageContain {
+    padding: 10px 15px 2px 20px;
+    font: 120% 'News Cycle', arial, sans-serif;
+    text-shadow: #FFF 0 1px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border: 7px 7px 7px 7px;
+    border: 2px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    text-align: center;
+}
+
+#Federation ol li {
+    font-family: Verdana;
+    font-size: 14px;
+    color: black;
+}
+
+.txtbox {
+    width: 220px;
+    height: 25px;
+    font: 11px verdana;
+    border: 1px solid #c4c4c4;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+    .txtbox:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.txtboxCustom {
+    height: 25px;
+    font: 11px verdana;
+    border: 1px solid #c4c4c4;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+    .txtboxCustom:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.txtboxCustomGrid {
+    height: 20px;
+    font: 11px verdana;
+    width: 120px;
+    border: 1px solid #c4c4c4;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+    .txtboxCustomGrid:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+
+
+
+.DDListCSS {
+    width: 250px;
+    margin: 0 15px 0 0;
+    font: 11px verdana;
+    height: 25px;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.DDListCustom {
+    margin: 0 10px 0 0;
+    font: 11px verdana;
+    height: 25px;
+    max-height: 200px;
+    position: relative;
+    padding-left: 4px;
+}
+
+.DDListCSS:focus {
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
+
+.DDListCustom:focus {
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
+
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    color: #000000;
+    text-decoration: none;
+    font-family: Verdana;
+}
+
+    .mGrid td {
+        padding: 2px;
+        border: 1px solid #3AC0F2;
+        color: #000000;
+    }
+
+    .mGrid th {
+        padding: 2px 2px;
+        color: #fff;
+        background: #424242 url(grd_head.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #424242 url(grd_pgr.png) repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 20px;
+        }
+
+        .mGrid .pgr a {
+            color: maroon;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+.Contact Image {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(45,185,227,0.8);
+    -webkit-box-shadow: #B3B3B3 16px 16px 16px;
+    -moz-box-shadow: #B3B3B3 16px 16px 16px;
+    box-shadow: #B3B3B3 16px 16px 16px;
+}
+
+#Image2 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(45,185,227,0.8);
+    -webkit-box-shadow: #B3B3B3 16px 16px 16px;
+    -moz-box-shadow: #B3B3B3 16px 16px 16px;
+    box-shadow: #B3B3B3 16px 16px 16px;
+}
+
+#Image3 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(45,185,227,0.8);
+    -webkit-box-shadow: #B3B3B3 16px 16px 16px;
+    -moz-box-shadow: #B3B3B3 16px 16px 16px;
+    box-shadow: #B3B3B3 16px 16px 16px;
+}
+
+/*-------table design---------------*/
+table {
+    /**border-collapse: collapse;*/ /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+    .bordered tr:hover {
+        background: #fbf8e9;
+        -o-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .bordered td, .bordered th {
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .bordered th {
+        background-color: #dce9f9;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+        /*background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+        background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);*/
+        /*background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);*/
+        /*background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+        background-image: linear-gradient(top, #ebf3fc, #dce9f9);*/
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        border-top: none;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+
+        .bordered td:first-child, .bordered th:first-child {
+            border-left: none;
+        }
+
+        .bordered th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+            -webkit-border-radius: 6px 0 0 0;
+            border-radius: 6px 0 0 0;
+        }
+
+        .bordered th:last-child {
+            -moz-border-radius: 0 6px 0 0;
+            -webkit-border-radius: 0 6px 0 0;
+            border-radius: 0 6px 0 0;
+        }
+
+        .bordered th:only-child {
+            -moz-border-radius: 6px 6px 0 0;
+            -webkit-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0;
+        }
+
+    .bordered tr:last-child td:first-child {
+        -moz-border-radius: 0 0 0 6px;
+        -webkit-border-radius: 0 0 0 6px;
+        border-radius: 0 0 0 6px;
+    }
+
+    .bordered tr:last-child td:last-child {
+        -moz-border-radius: 0 0 6px 0;
+        -webkit-border-radius: 0 0 6px 0;
+        border-radius: 0 0 6px 0;
+    }
+
+/*-------table design---------------*/
+
+.ListItem {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+    .ListItem a {
+        color: black;
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+        .ListItem a:hover {
+            color: red;
+            font-weight: bold;
+        }
+
+
+#NoticeStyle li {
+    color: black;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: .6em;
+    margin-bottom: .6em;
+}
+
+    #NoticeStyle li a {
+        color: black;
+        text-decoration: none;
+    }
+
+        #NoticeStyle li a:hover {
+            font-weight: bold;
+            color: maroon;
+        }
+
+.GridCoverContain {
+    padding: 2px 0px 10px 0px;
+    font-size:12px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border: 7px 7px 7px 7px;
+    border: 2px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
